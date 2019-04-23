@@ -45,14 +45,14 @@ var browser = new webdriver.Builder()
   .build();
 
 browser.get(serverUri);
-var findIncrement = browser
-  .findElement(webdriver.By.className("btn btn-secondary btn-sm"))
+
+// incremnts
+var findIncrementById = browser.findElement(webdriver.By.id("1")).click();
+
+//var findMinusByName = browser.findElement(webdriver.By.name("minus1")).click();
+
+var findIncrementByTag = browser
+  .findElement(webdriver.By.name("delete3"))
   .click();
 
-var findDecrement = browser.findElement(webdriver.By.id("off")).click();
-
-// var toos = browser
-//   .findElement(webdriver.By.className("btn btn-secondary btn-sm"))
-//   .click();
-//browser.elem;
-console.log("dit " + browser.getTitle());
+console.log("dit " + browser.getSession);

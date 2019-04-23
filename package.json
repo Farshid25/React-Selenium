@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "s-test": "mocha test test-browser.js",
+    "testcase-1": "mocha test testcase-1.js",
+    "testcase-2": "mocha test testcase-2.js",
     "test": "react-scripts test --env=node"
   },
   "eslintConfig": {
